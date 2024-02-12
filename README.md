@@ -28,6 +28,16 @@ Webアプリケーションを作成するのJavaScriptです。\
 ![alt text](https://potatoscript.github.io/homepage/potato-syntax.gif "Basic syntax")
 
 
+‘‘‘javascript
+<potato-list-mylist
+    model="model.php"
+    callback="
+       var table=document.getElementById('list-mylist');
+       table.rows[1].cells[0].style.background='orange';
+    "
+  >
+  </potato-list-mylist>
+‘‘‘
 
 
 
