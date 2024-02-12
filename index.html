@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PotatoScript</title>
+  <link rel="stylesheet" href="potato.css"/>
+  <script src="potato.1.5.0.js"></script>
+</head>
+<body>
+
+<div id="content">
+  <p>Hello, Potato</p>
+  <potato-list-mylist
+    model="model.php"
+    callback="
+       var table=document.getElementById('list-mylist');
+       table.rows[1].cells[0].style.background='orange';
+    "
+  >
+  </potato-list-mylist>
+</div>
+
+</body>
+</html>
