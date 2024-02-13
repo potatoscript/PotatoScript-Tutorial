@@ -65,8 +65,6 @@ version 1.5.0 - improve on OChart
                 potato.show() --> $("potato").show();
 */
 
-'use strict';
-
 window.chartColors = {
 	red: 'rgb(255, 99, 132)',
 	orange: 'rgb(255, 159, 64)',
@@ -1717,7 +1715,6 @@ Converter.prototype.getValues = function(space) {
 
 module.exports = convert;
 },{"3":3}],5:[function(require,module,exports){
-'use strict'
 
 module.exports = {
 	"aliceblue": [240, 248, 255],
