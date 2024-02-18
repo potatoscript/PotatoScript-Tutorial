@@ -63,6 +63,8 @@ version 1.5.0 - improve on OChart
 
                 potato.hide() --> $("potato").hide();
                 potato.show() --> $("potato").show();
+
+version 1.6.0 - debug and combined code
 */
 
 window.chartColors = {
