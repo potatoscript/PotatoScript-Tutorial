@@ -5,12 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PotatoScript</title>
   <link rel="stylesheet" href="potato.css"/>
-  <script src="potato.1.5.0.js"></script>
+  <script src="potato.1.6.0.js"></script>
 </head>
 <body>
 
 <div id="content">
   <p>Hello, Potato</p>
+  <potato-chart-mybar
+    height=450px
+    width=600px
+    chartType=Bar
+    stacked=true
+
+    title="my OChart BAR"
+    titleDisplay=true
+
+    data = model.php
+    xLabelData=menu1,menu2,menu3,menu4
+    xLabelAngle=10
+		yAxesLabel="g"
+		y2AxesLabel="calories"
+    data2Label="calories"
+    dataLabel="Protein,Fat,Sugar"
+    colorIndex="#e3ff7f,#a1a4ff,yellow"
+
+    pointStyle="triangle"
+    pointBorderColorIndex="blue"
+    pointBorderWidth="2"
+
+    dataFontSize=15px
+    labelFontSize=22px
+    label2FontSize=22px
+    legendDisplay=true
+    legendPosition="bottom"
+
+		click='
+    alert(potato.chartXvalue);
+    '
+
+></potato-chart-mybar>
 </div>
 
 </body>
